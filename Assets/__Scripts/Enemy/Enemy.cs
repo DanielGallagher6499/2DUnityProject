@@ -66,14 +66,7 @@ public class Enemy : MonoBehaviour
         {
             //plays when enemy is shot
             SoundManager.PlaySound("enemyDeath");
-            // GameObject explosion = Instantiate(explosionFX,
-            //                                  transform.position,
-            //                                  transform.rotation);
-            // Destroy(explosion, explosionDuration);
-            //Destroys bullet
             Destroy(bullet.gameObject);
-            // PublishEnemyKilledEvent();
-            //Destroys enemy
             Destroy(gameObject);
         }
 
